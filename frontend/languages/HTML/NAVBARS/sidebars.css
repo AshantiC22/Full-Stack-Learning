@@ -1,0 +1,115 @@
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 80px; /* Slim view - only icons visible */
+  background: #2e2e2e;
+  color: white;
+  transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Snappy bounce effect */
+  overflow: hidden; /* NEW: Prevents text from spilling out when slim */
+  white-space: nowrap; /* NEW: Keeps text on one line so it doesn't wrap weirdly */
+  z-index: 1000;
+}
+
+/* EXPAND ON HOVER */
+.side-nav:hover {
+  width: 260px; /* Expanded view */
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 50px;
+  color: gold;
+}
+
+.logo-icon {
+  min-width: 50px; /* Ensures the icon part never shrinks */
+  text-align: center;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.icon {
+  min-width: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-text {
+  margin-left: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s;
+}
+
+/* Show text only when sidebar is hovered */
+.side-nav:hover .nav-text {
+  opacity: 1;
+}
+
+/* HOVER STATES */
+.nav-links a:hover,
+.nav-links li.active a {
+  background: rgba(255, 215, 0, 0.1);
+  color: gold;
+}
+
+@media (max-width: 600px) {
+  .side-nav {
+    width: 100%;
+    height: 70px; /* Horizontal bar at the bottom */
+    top: auto;
+    bottom: 0;
+    transition: none;
+  }
+
+  .side-nav:hover {
+    width: 100%; /* Stop it from expanding on mobile */
+  }
+
+  .nav-container {
+    flex-direction: row; /* Layout links side-by-side */
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .nav-logo,
+  .nav-text {
+    display: none; /* Hide logo and text on tiny screens to save space */
+  }
+
+  .nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+  }
+}
