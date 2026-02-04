@@ -1,0 +1,95 @@
+.shard-navbar {
+  background: #111;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-main {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-main > li > a {
+  color: #00ffcc; /* Cyberpunk Teal */
+  text-decoration: none;
+  padding: 0 30px;
+  font-family: "Orbitron", sans-serif; /* A techy font looks great here */
+  letter-spacing: 2px;
+}
+
+/* THE MEGA CONTAINER */
+.shard-menu {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0); /* Starts scaled down */
+  width: 900px;
+  background: #222;
+  border-top: 3px solid #00ffcc;
+  padding: 40px;
+
+  /* THE CLIP-PATH: Creating a futuristic "shard" shape */
+  clip-path: polygon(
+    5% 0%,
+    95% 0%,
+    100% 20%,
+    100% 80%,
+    95% 100%,
+    5% 100%,
+    0% 80%,
+    0% 20%
+  );
+
+  transform-origin: top;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* THE REVEAL */
+.mega-trigger:hover .shard-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scaleY(1);
+}
+
+.shard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 30px;
+  color: white;
+}
+
+/* Styling the list inside */
+.category h4 {
+  color: #00ffcc;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+}
+.category li a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.category li a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.shard-promo {
+  background: rgba(0, 255, 204, 0.1);
+  padding: 20px;
+  border-left: 4px solid #00ffcc;
+  text-align: center;
+}
