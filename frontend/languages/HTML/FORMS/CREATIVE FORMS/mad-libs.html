@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mad-libs.css" />
+    <title>MAD LIBS</title>
+  </head>
+  <body>
+    <section class="story-form-container">
+      <form class="story-form">
+        <h2>Let's Write a Project Story</h2>
+
+        <p class="story-text">
+          Hello Gemini! My name is
+          <input
+            type="text"
+            name="recruiter_name"
+            placeholder="[Your Name]"
+            required
+          />
+          and I’m reaching out from
+          <input type="text" name="company" placeholder="[Company Name]" />. We
+          are looking for a backend developer to help us build a
+          <select name="project_type">
+            <option value="ecommerce">E-commerce Site</option>
+            <option value="api">Custom API</option>
+            <option value="database">Database Migration</option>
+            <option value="secret">Top Secret Project</option>
+          </select>
+
+          with a budget of roughly
+          <input type="number" name="budget" placeholder="[Amount]" />. You can
+          email me at
+          <input
+            type="email"
+            name="email"
+            placeholder="[Email Address]"
+            required
+          />
+          to get started!
+        </p>
+
+        <button type="submit" class="story-submit">Send Story</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.story-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.story-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  line-height: 2; /* Gives space between the lines for the inputs */
+  box-shadow: 20px 20px 0px #ff4757; /* 3D offset shadow we practiced! */
+  border: 2px solid #333;
+}
+
+.story-text {
+  font-size: 1.4rem;
+  color: #333;
+  font-family: "Georgia", serif;
+}
+
+/* Styling the inputs to look like underlined blanks */
+.story-form input,
+.story-form select {
+  border: none;
+  border-bottom: 2px dashed #ff4757;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #4834d4;
+  padding: 0 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+/* Hover/Focus effect to make it interactive */
+.story-form input:focus,
+.story-form select:focus {
+  border-bottom: 2px solid #4834d4;
+  background-color: #fff9fa;
+}
+
+.story-submit {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.story-submit:hover {
+  background: #ff4757;
+  transform: translateY(-3px);
+}

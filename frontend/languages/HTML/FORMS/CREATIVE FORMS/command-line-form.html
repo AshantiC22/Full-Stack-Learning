@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="command-line-form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="terminal-form">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>bash — guest@portfolio</p>
+      </div>
+      <form id="console-form" action="/api/contact" method="POST">
+        <div class="terminal-body">
+          <p class="command-text">>> Initializing recruitment_protocol.sh...</p>
+          <p class="command-text">>> Enter your name:</p>
+          <input
+            type="text"
+            name="recruiter_name"
+            autofocus
+            required
+            class="terminal-input"
+          />
+
+          <div class="next-step">
+            <p class="command-text">>> What is your company email?</p>
+            <input type="email" name="recruiter_email" class="terminal-input" />
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
