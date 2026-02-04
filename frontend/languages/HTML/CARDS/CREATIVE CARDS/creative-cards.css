@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #554646;
+  font-family: Arial, sans-serif;
+}
+
+.cards-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  background-color: aliceblue;
+  border: 1px solid;
+  transform: translateY(-20px);
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.card-profile-card {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 10px rgba(187, 116, 116, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-profile-card h2 {
+  margin: 15px 0 5px 0;
+  font-size: 1.5rem;
+  color: #eeecec;
+}
+.card-profile-card p {
+  margin: 0 15px 15px 15px;
+  font-size: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+.social-links {
+  width: 100%;
+  height: 50;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4e3e3e;
+}
+.social-links a {
+  text-decoration: none;
+  color: #eeecec;
+  font-size: 1.2rem;
+}
+.social-links a:hover {
+  color: #ffcc00;
+  text-shadow: #ddd 0 0 15px;
+}
+.card-profile-card img {
+  width: 100%;
+  height: 75%;
+}
+
+.card-product-card {
+  width: 300px;
+  height: 470px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow:
+    -3px 3px 0px #ccc,
+    -4px 4px 0px #ccc,
+    -5px 5px 0px #ccc,
+    10px 13px 7px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.card-product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-product-card h2 {
+  margin: 10px 0 5px 0;
+  font-size: 1.5rem;
+  color: #eeecec;
+}
+
+.brand {
+  color: #fd0a0a;
+}
+.card-product-card p {
+  margin: 0 15px 15px 15px;
+  font-size: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+.card-product-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  animation: pulse 3s infinite;
+  text-shadow: #ffcc00 0 0 40px;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buy-button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: #aaa 0 0 5px;
+  transition: all 0.3s ease;
+}
+.buy-button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+  animation: glow 1s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #a7a396;
+  }
+  50% {
+    box-shadow: 0 0 20px #bbb7a8;
+  }
+  100% {
+    box-shadow: 0 0 5px #bbb7a7;
+  }
+}
+
+.buy-button:active {
+  transform: scale(0.95);
+}
+
+.page-wrapper {
+  display: grid;
+  place-items: center; /* Centers cards horizontally and vertically */
+  min-height: 10vh;
+  gap: 40px; /* Puts space between the different cards */
+  padding: 20px;
+}
+
+.blog-post-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This splits it exactly in half */
+  width: 600px; /* Adjust width as needed */
+  background-color: #6c94a3;
+  border-radius: 10px;
+  overflow: hidden; /* This crops the image to the card's rounded corners */
+  box-shadow: 0 8px 16px 10px rgba(187, 116, 116, 0.2);
+  place-items: stretch; /* Makes both sides equal height */
+  border: 3px solid #000;
+  box-shadow:
+    -3px 3px 0px #0e0d0d,
+    -4px 4px 0px #0c0c0c,
+    -5px 5px 0px #0c0c0c,
+    10px 13px 7px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-image {
+  width: 100%;
+  height: 100%; /* Makes the image fill the left side top-to-bottom */
+  object-fit: cover; /* Prevents the image from looking stretched */
+}
+
+.card-content {
+  padding: 20px; /* Gives the text breathing room inside the right half */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the text vertically */
+}
+.blog-post-card img {
+  width: 100%; /* Fills the 150px column exactly */
+  height: 100%; /* Stretches to fill the height */
+  object-fit: cover; /* This is the secret! It crops the image so it doesn't look squished */
+}
+
+.read-more {
+  font-size: large;
+  color: #ffcc00;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.read-more:hover {
+  text-decoration: underline;
+  text-shadow: #ddd 0 0 15px;
+  cursor: pointer;
+}
+
+.card-p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ecece9;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* 1. THE STAGE (Centering everything) */
+.page-container {
+  display: grid;
+  place-items: center; /* This is the 'magic' centerer we discussed */
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 2. THE CARD BOX */
+.event-card {
+  width: 320px;
+  height: 450px;
+  perspective: 1000px; /* NEW: Gives the 3D 'depth' so it doesn't look flat when flipping */
+}
+
+/* 3. THE FLIPPER */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* NEW: Added 'cubic-bezier' for a smoother, snappier flip */
+  transform-style: preserve-3d; /* NEW: Essential! Tells the browser the children are in 3D space */
+}
+
+.event-card:hover .card-inner {
+  transform: rotateY(180deg); /* The actual flip trigger */
+}
+
+/* 4. THE FACES */
+.card-front,
+.card-back {
+  position: absolute; /* Stacked on top of each other */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* NEW: Hides the 'back' of the element so it doesn't show through */
+  border-radius: 15px;
+  border: 5px solid gold; /* Pokémon style */
+  overflow: hidden;
+}
+
+/* FRONT SPECIFICS */
+.card-front {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the card without squishing */
+}
+
+.front-label {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: white;
+  padding: 10px;
+}
+
+/* BACK SPECIFICS */
+.card-back {
+  background-color: #1a1a1a;
+  color: white;
+  transform: rotateY(
+    180deg
+  ); /* NEW: Rotates the back face 180 deg initially so it's ready to flip in */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.register-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* THE PARENT: This centers the three cards in the middle of your screen */
+.card-gallery {
+  display: grid;
+  /* Creates 3 columns that are at least 300px wide */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto; /* Centers the whole gallery horizontally */
+  padding: 50px 20px;
+  align-items: start; /* Aligns them to the top of their grid row */
+}
+
+/* CARD 5: Testimonial Slant */
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.quote-area {
+  background: #ff4757;
+  color: white;
+  padding: 40px 20px;
+  /* A slanted bottom cut */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.author {
+  padding: 20px;
+  text-align: right;
+  margin: 0;
+}
+
+/* CARD 6: Game Card (The Pointy Cut) */
+.game-card {
+  background: #1a1a1a;
+  color: #00d2ff;
+  border: 2px solid #00d2ff;
+  text-align: center;
+}
+.game-header {
+  /* This creates a sharp "V" shape at the bottom of the image */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+.game-header img {
+  width: 100%;
+  display: block;
+}
+.game-info {
+  padding: 20px;
+}
+
+/* CARD 7: Creative Card (The Ribbon) */
+.creative-card {
+  background: #f4f4f4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.creative-banner {
+  background: #6c5ce7;
+  color: white;
+  padding: 20px;
+  /* Inverted V shape at the bottom */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+  text-align: center;
+}
+.creative-body {
+  padding: 30px 20px;
+  text-align: center;
+}
