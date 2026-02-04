@@ -1,0 +1,1163 @@
+/* ================================
+   CREATIVE BUTTON LIBRARY - CSS
+   ================================ */
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.showcase-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.showcase-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Section Styles */
+.button-section {
+  background: white;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.dark-section {
+  background: #1a1a2e;
+}
+
+.dark-section h2 {
+  color: white;
+  border-bottom-color: #00ff88;
+}
+
+.glass-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-section h2 {
+  color: white;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  align-items: center;
+}
+
+.shape-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* ================================
+   SECTION 1: ENHANCED STANDARD
+   ================================ */
+
+.btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #218838;
+  box-shadow: 0 0 20px rgba(40, 167, 69, 0.6);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+  transform: rotate(-2deg);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+  background: #667eea;
+  color: white;
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(45deg, #764ba2, #667eea);
+  transform: scale(1.08);
+}
+
+/* ================================
+   SECTION 2: 3D BUTTONS
+   ================================ */
+
+.btn-3d {
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.1s;
+  position: relative;
+}
+
+.btn-3d-blue {
+  background: #3498db;
+  box-shadow:
+    0 6px 0 #2980b9,
+    0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-blue:hover {
+  transform: translateY(2px);
+  box-shadow:
+    0 4px 0 #2980b9,
+    0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-blue:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 0 0 #2980b9,
+    0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-green {
+  background: #2ecc71;
+  box-shadow:
+    0 6px 0 #27ae60,
+    0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-green:hover {
+  transform: translateY(2px);
+  box-shadow:
+    0 4px 0 #27ae60,
+    0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-purple {
+  background: #9b59b6;
+  box-shadow:
+    0 6px 0 #8e44ad,
+    0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-purple:hover {
+  transform: translateY(2px);
+  box-shadow:
+    0 4px 0 #8e44ad,
+    0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-pressed {
+  padding: 15px 35px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+}
+
+.btn-pressed:hover {
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.btn-layered {
+  padding: 15px 35px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  box-shadow:
+    0 4px 0 #e67e22,
+    0 8px 0 #d35400,
+    0 12px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s;
+}
+
+.btn-layered:hover {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #e67e22,
+    0 4px 0 #d35400,
+    0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-shadow-lift {
+  padding: 15px 35px;
+  background: white;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.btn-shadow-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   SECTION 3: GEOMETRIC SHAPES
+   ================================ */
+
+.btn-triangle {
+  padding: 20px 40px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transition: all 0.3s;
+}
+
+.btn-triangle:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: #c0392b;
+}
+
+.btn-hexagon {
+  padding: 20px 40px;
+  background: #3498db;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+  transition: all 0.3s;
+}
+
+.btn-hexagon:hover {
+  transform: rotate(60deg) scale(1.1);
+  background: #2980b9;
+}
+
+.btn-diamond {
+  padding: 25px 45px;
+  background: #9b59b6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: all 0.3s;
+}
+
+.btn-diamond:hover {
+  transform: rotate(45deg) scale(1.1);
+  background: #8e44ad;
+}
+
+.btn-circle {
+  width: 120px;
+  height: 120px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-circle:hover {
+  transform: scale(1.15);
+  background: #27ae60;
+  box-shadow: 0 0 30px rgba(46, 204, 113, 0.6);
+}
+
+.btn-pill {
+  padding: 15px 50px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-pill:hover {
+  background: #e67e22;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+}
+
+.btn-arrow {
+  padding: 15px 40px 15px 30px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  transition: all 0.3s;
+}
+
+.btn-arrow:hover {
+  transform: translateX(20px);
+  background: #16a085;
+}
+
+/* ================================
+   SECTION 4: NEON & GLOW
+   ================================ */
+
+.btn-neon {
+  padding: 15px 35px;
+  background: transparent;
+  border: 2px solid;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-neon-blue {
+  color: #00d9ff;
+  border-color: #00d9ff;
+  text-shadow: 0 0 10px #00d9ff;
+}
+
+.btn-neon-blue:hover {
+  background: #00d9ff;
+  color: #1a1a2e;
+  box-shadow:
+    0 0 20px #00d9ff,
+    0 0 40px #00d9ff,
+    0 0 60px #00d9ff;
+}
+
+.btn-neon-pink {
+  color: #ff006e;
+  border-color: #ff006e;
+  text-shadow: 0 0 10px #ff006e;
+}
+
+.btn-neon-pink:hover {
+  background: #ff006e;
+  color: #1a1a2e;
+  box-shadow:
+    0 0 20px #ff006e,
+    0 0 40px #ff006e,
+    0 0 60px #ff006e;
+}
+
+.btn-neon-green {
+  color: #00ff88;
+  border-color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.btn-neon-green:hover {
+  background: #00ff88;
+  color: #1a1a2e;
+  box-shadow:
+    0 0 20px #00ff88,
+    0 0 40px #00ff88,
+    0 0 60px #00ff88;
+}
+
+.btn-glow {
+  padding: 15px 35px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-glow:hover {
+  box-shadow:
+    0 0 20px #8b5cf6,
+    0 0 40px #8b5cf6,
+    0 0 60px #8b5cf6,
+    0 0 80px #8b5cf6;
+  transform: scale(1.05);
+}
+
+.btn-pulse {
+  padding: 15px 35px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+  }
+}
+
+.btn-cyber {
+  padding: 15px 35px;
+  background: #1a1a2e;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.btn-cyber:hover {
+  background: #00ff88;
+  color: #1a1a2e;
+  box-shadow: 0 0 30px #00ff88;
+}
+
+/* ================================
+   SECTION 5: ANIMATED BUTTONS
+   ================================ */
+
+.btn-slide {
+  padding: 15px 35px;
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.btn-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #667eea;
+  transition: left 0.3s;
+  z-index: -1;
+}
+
+.btn-slide:hover::before {
+  left: 0;
+}
+
+.btn-slide:hover {
+  color: white;
+}
+
+.btn-bounce {
+  padding: 15px 35px;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-bounce:hover {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+}
+
+.btn-shake {
+  padding: 15px 35px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-shake:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+.btn-flip {
+  padding: 15px 35px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.btn-flip:hover {
+  transform: rotateY(180deg);
+}
+
+.btn-ripple {
+  padding: 15px 35px;
+  background: #06b6d4;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s,
+    height 0.6s;
+}
+
+.btn-ripple:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-morph {
+  padding: 15px 35px;
+  background: #ec4899;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+.btn-morph:hover {
+  border-radius: 50px;
+  padding: 15px 50px;
+  letter-spacing: 3px;
+}
+
+/* ================================
+   SECTION 6: ICON BUTTONS
+   ================================ */
+
+.btn-icon {
+  padding: 12px 28px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.icon {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.btn-icon-download:hover .icon {
+  transform: translateY(5px);
+}
+
+.btn-icon-upload:hover .icon {
+  transform: translateY(-5px);
+}
+
+.btn-icon-share:hover .icon {
+  transform: translate(5px, -5px);
+}
+
+.btn-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-social {
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-github {
+  background: #333;
+}
+
+.btn-github:hover {
+  background: #24292e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-linkedin {
+  background: #0077b5;
+}
+
+.btn-linkedin:hover {
+  background: #006399;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
+}
+
+.btn-twitter {
+  background: #1da1f2;
+}
+
+.btn-twitter:hover {
+  background: #1a8cd8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(29, 161, 242, 0.4);
+}
+
+/* ================================
+   SECTION 7: GLASSMORPHISM
+   ================================ */
+
+.btn-glass {
+  padding: 15px 35px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.btn-glass-colored {
+  padding: 15px 35px;
+  background: rgba(102, 126, 234, 0.2);
+  color: white;
+  border: 1px solid rgba(102, 126, 234, 0.4);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.btn-glass-colored:hover {
+  background: rgba(102, 126, 234, 0.4);
+  transform: scale(1.05);
+}
+
+.btn-frosted {
+  padding: 15px 35px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s;
+}
+
+.btn-frosted:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.btn-blur {
+  padding: 15px 35px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s;
+}
+
+.btn-blur:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* ================================
+   SECTION 8: LOADING & STATES
+   ================================ */
+
+.btn-loading {
+  padding: 15px 35px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-success-state {
+  padding: 15px 35px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.checkmark {
+  font-size: 20px;
+  animation: checkmark 0.5s ease;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-success-state:hover {
+  transform: scale(1.05);
+}
+
+.btn-disabled {
+  padding: 15px 35px;
+  background: #d1d5db;
+  color: #9ca3af;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-progress {
+  padding: 0;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  animation: progress 2s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.btn-progress {
+  z-index: 1;
+}
+
+/* ================================
+   SECTION 9: CREATIVE & UNIQUE
+   ================================ */
+
+.btn-border-animate {
+  padding: 15px 35px;
+  background: transparent;
+  color: #667eea;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn-border-animate::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  animation: border-rotate 3s linear infinite;
+}
+
+.btn-border-animate:hover::before {
+  opacity: 1;
+}
+
+@keyframes border-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-split {
+  padding: 15px 35px;
+  background: linear-gradient(to right, #667eea 50%, #764ba2 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-position 0.3s;
+}
+
+.btn-split:hover {
+  background-position: left;
+}
+
+.btn-dots {
+  padding: 15px 35px;
+  background: white;
+  color: #667eea;
+  border: 3px dotted #667eea;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-dots:hover {
+  background: #667eea;
+  color: white;
+  border-style: solid;
+  transform: rotate(5deg);
+}
+
+.btn-stripe {
+  padding: 15px 35px;
+  background: repeating-linear-gradient(
+    45deg,
+    #667eea,
+    #667eea 10px,
+    #764ba2 10px,
+    #764ba2 20px
+  );
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-stripe:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-bubble {
+  padding: 15px 35px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-bubble::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  bottom: -10px;
+  left: 10%;
+  animation: bubble 3s infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.btn-magnet {
+  padding: 15px 35px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-magnet:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 8px rgba(139, 92, 246, 0.2);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.showcase-footer {
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.showcase-footer p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.showcase-footer a {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.showcase-footer a:hover {
+  color: white;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+  .showcase-header h1 {
+    font-size: 2rem;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-section {
+    padding: 25px;
+  }
+
+  .btn-circle {
+    width: 100px;
+    height: 100px;
+  }
+}
